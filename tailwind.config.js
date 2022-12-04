@@ -11,6 +11,12 @@ module.exports = {
         'cblack': '#21252B',
         'cgreen': '#49B142',
         'cgrey': '#F1F1F1',
+        'clightgreen': '#E7FFE5',
+        'ctransgreen': 'rgba(73, 177, 66, 0.25)'
+      },
+      padding: {
+        '1/2': '50%',
+        full: '100%'
       }
     },
   },
