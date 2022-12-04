@@ -9,7 +9,7 @@ type PropType = {
 
 function Button(props: PropType) {
     return (
-        <div className='bg-cgreen px-3 py-3 rounded-md text-white flex flex-row gap-1 text-sm flex-wrap'>
+        <div className='bg-cgreen px-3 py-3 rounded-md text-white flex flex-row gap-1 text-sm flex-wrap justify-center'>
             {props.icon && <Image src={props.icon} alt='login icon' height={20} width={20} />}
             {props.text}
         </div>

@@ -69,7 +69,7 @@ const DATA = [
     }
 ]
 
-function Section2(props) {
+function ProductCategories(props) {
     return (
         <Card>
             {/* TO-DO add manual slider */}
@@ -88,4 +88,4 @@ function Section2(props) {
     );
 }
 
-export default Section2;
+export default ProductCategories;
