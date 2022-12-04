@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'cblack': '#21252B',
         'cgreen': '#49B142',
+        'cgrey': '#F1F1F1',
       }
     },
   },

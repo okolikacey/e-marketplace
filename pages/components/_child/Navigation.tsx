@@ -7,7 +7,7 @@ import loginIcon from '../../../public/icons/loginicon.svg'
 
 function Navigation(props) {
     return (
-        <div className='px-20 py-5 flex flex-row flex-wrap'>
+        <div className='px-20 py-5 flex flex-row flex-wrap bg-white'>
             <div className='flex-none'>
                 <Image src={logo} height={150} width={150} alt='logo' />
             </div>
