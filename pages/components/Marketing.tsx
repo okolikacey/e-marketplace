@@ -25,7 +25,7 @@ const DATA = [
     {
         id: 3,
         image: petraco,
-        name: "Repairs",
+        company: "Repairs",
         description: 'Mud Logging & Data processing',
         location: "Port Harcourt, Nigeria"
     }
