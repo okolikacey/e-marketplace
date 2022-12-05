@@ -2,10 +2,10 @@ import React from 'react';
 import Card from './_child/Card';
 import Product2 from './_child/Product2';
 import SectionHeader from './_child/SectionHeader';
-import diagnostics from '../../public/images/diagnostics.png'
-import repairs from '../../public/images/repairs.png'
-import revamping from '../../public/images/revamping.png'
-import spare_parts from '../../public/images/spare_parts.png'
+import diagnostics from '../public/images/diagnostics.png'
+import repairs from '../public/images/repairs.png'
+import revamping from '../public/images/revamping.png'
+import spare_parts from '../public/images/spare_parts.png'
 import Service from './_child/Service';
 
 const DATA = [

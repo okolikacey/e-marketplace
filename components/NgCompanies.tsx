@@ -2,11 +2,11 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import Card from './_child/Card';
-import chevron from '../../public/images/chevron.png';
-import exxon from '../../public/images/exxon.png';
-import total from '../../public/images/total.png';
-import oando from '../../public/images/oando.png';
-import nnpc from '../../public/images/nnpc.png';
+import chevron from '../public/images/chevron.png';
+import exxon from '../public/images/exxon.png';
+import total from '../public/images/total.png';
+import oando from '../public/images/oando.png';
+import nnpc from '../public/images/nnpc.png';
 import Company from './_child/Company';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 

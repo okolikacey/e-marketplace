@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './_child/Card';
-import lnglogo from '../../public/images/NLNG-Logo.png'
-import nuprclogo from '../../public/images/NUPRC-Logo.png'
+import lnglogo from '../public/images/NLNG-Logo.png'
+import nuprclogo from '../public/images/NUPRC-Logo.png'
 import Tender from './_child/Tender';
 import SectionHeader from './_child/SectionHeader';
 

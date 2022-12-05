@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri'
 
@@ -5,13 +6,13 @@ function NavOptions(props) {
     return (
         <div className='px-20 py-5 flex flex-row flex-wrap text-xs justify-between mt-0.5 bg-white'>
             <div className='flex flex-row gap-4 items-center'>
-                <div>HOME</div>
+                <Link href={'/'}>HOME</Link>
                 <div className='flex flex-row items-center gap-2'>
                     CATEGORIES
                     <RiArrowDownSLine />
                 </div>
                 <div>ADVERTS</div>
-                <div>PRODUCTS AND SERVICES</div>
+                <Link href={'/productsandservices'}>PRODUCTS AND SERVICES</Link>
                 <div>COMPANIES</div>
             </div>
             <div className='flex flex-row gap-4'>

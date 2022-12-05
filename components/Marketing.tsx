@@ -1,9 +1,8 @@
 import React from 'react';
 import Card from './_child/Card';
 import SectionHeader from './_child/SectionHeader';
-import Service from './_child/Service';
-import lng from '../../public/images/NLNG-Logo.png'
-import petraco from '../../public/images/petraco.png'
+import lng from '../public/images/NLNG-Logo.png'
+import petraco from '../public/images/petraco.png'
 import MarketingItem from './_child/MarketingItem';
 
 

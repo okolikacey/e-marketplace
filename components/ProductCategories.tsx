@@ -2,14 +2,14 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import Card from './_child/Card';
-import prod1 from '../../public/images/prod1.png';
-import prod2 from '../../public/images/prod2.png';
-import prod3 from '../../public/images/prod3.png';
-import prod4 from '../../public/images/prod4.png';
-import prod5 from '../../public/images/prod5.png';
-import prod6 from '../../public/images/prod6.png';
-import prod7 from '../../public/images/prod7.png';
-import prod8 from '../../public/images/prod8.png';
+import prod1 from '../public/images/prod1.png';
+import prod2 from '../public/images/prod2.png';
+import prod3 from '../public/images/prod3.png';
+import prod4 from '../public/images/prod4.png';
+import prod5 from '../public/images/prod5.png';
+import prod6 from '../public/images/prod6.png';
+import prod7 from '../public/images/prod7.png';
+import prod8 from '../public/images/prod8.png';
 
 import Product from './_child/Product';
 

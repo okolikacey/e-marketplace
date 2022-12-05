@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import backdrop from '../../public/images/backdrop.png'
+import backdrop from '../public/images/backdrop.png'
 
 
 function About(props) {

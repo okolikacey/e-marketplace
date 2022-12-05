@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from './_child/Card';
 import SectionHeader from './_child/SectionHeader';
-import coilTubing from '../../public/images/coiled_tubing.png'
-import controlValue from '../../public/images/Control_Valve.png'
-import Hydraulic_Production_Packer from '../../public/images/Hydraulic_Production_Packer.png'
-import Mechnical_Flex_Grip from '../../public/images/Mechnical_Flex_Grip.png'
+import coilTubing from '../public/images/coiled_tubing.png'
+import controlValue from '../public/images/Control_Valve.png'
+import Hydraulic_Production_Packer from '../public/images/Hydraulic_Production_Packer.png'
+import Mechnical_Flex_Grip from '../public/images/Mechnical_Flex_Grip.png'
 import Product2 from './_child/Product2';
 
 

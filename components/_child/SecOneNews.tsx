@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import newOneImage from '../../../public/images/news1.png'
-import newTwoImage from '../../../public/images/news2.png'
+import newOneImage from '../../public/images/news1.png'
+import newTwoImage from '../../public/images/news2.png'
 
 
 function SecOneNews(props) {

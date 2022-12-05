@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './_child/Card';
-import backdrop from '../../public/images/backdrop.png'
+import backdrop from '../public/images/backdrop.png'
 import color1 from '../../public/images/Vector 13.png'
 import color2 from '../../public/images/Vector 14.png'
 import Image from 'next/image';

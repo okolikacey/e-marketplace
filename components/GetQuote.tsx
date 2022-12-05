@@ -1,5 +1,5 @@
 import React from 'react';
-import backdrop from '../../public/images/backdrop3.png'
+import backdrop from '../public/images/backdrop3.png'
 import Button from './_child/Button';
 import QuotationForm from './_child/QuotationForm';
 
