@@ -10,6 +10,7 @@ import About from './components/About'
 import Services from './components/Services'
 import NgCompanies from './components/NgCompanies'
 import Marketing from './components/Marketing'
+import GetQuote from './components/GetQuote'
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <Services />
       <NgCompanies />
       <Marketing />
+      <GetQuote />
     </>
   )
 }

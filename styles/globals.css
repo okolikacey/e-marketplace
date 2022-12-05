@@ -5,7 +5,6 @@
 
 * > *{
     font-family: 'Mulish', sans-serif;
-    ;
 }
 
 @layer components {
@@ -18,6 +17,18 @@
     }
   }
 
+  @layer utilities {
+    .placeholder-style::placeholder {
+       padding: 5px 12px;
+       margin: 5px;
+    }
+  }
+
+p{
+  color: #989898;
+}
+
 body{
-    background-color: #F1F1F1
+    background-color: #F1F1F1;
 };
+
