@@ -6,6 +6,10 @@ import Section1 from './components/Section1'
 import ProductCategories from './components/ProductCategories'
 import Tenders from './components/Tenders'
 import Products from './components/Products'
+import About from './components/About'
+import Services from './components/Services'
+import NgCompanies from './components/NgCompanies'
+import Marketing from './components/Marketing'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +19,10 @@ const Home: NextPage = () => {
       <ProductCategories />
       <Tenders />
       <Products />
+      <About />
+      <Services />
+      <NgCompanies />
+      <Marketing />
     </>
   )
 }

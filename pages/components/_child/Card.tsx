@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type Propstyle = {
-    cardStyle: any;
+    children: ReactNode;
+    cardStyle?: string;
 }
 
-function Card(props) {
+function Card(props: Propstyle) {
     return (
-        <section className='card'>
+        <section className={`card ${props.cardStyle}`}>
             {props.children}
         </section>
     );
