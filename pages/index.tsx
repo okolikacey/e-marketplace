@@ -11,6 +11,7 @@ import Services from './components/Services'
 import NgCompanies from './components/NgCompanies'
 import Marketing from './components/Marketing'
 import GetQuote from './components/GetQuote'
+import Footer from './components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <NgCompanies />
       <Marketing />
       <GetQuote />
+      <Footer />
     </>
   )
 }

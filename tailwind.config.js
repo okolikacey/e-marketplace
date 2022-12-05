@@ -12,7 +12,7 @@ module.exports = {
         'cgreen': '#49B142',
         'cgrey': '#F1F1F1',
         'clightgreen': '#E7FFE5',
-        'cparagraph': '#989898',
+        'cyellow': '#FDD922',
         'ctransgreen': 'rgba(73, 177, 66, 0.25)',
         'clightgrey': 'radial-gradient(50.33% 50.33% at 49.84% 44.15%, rgba(247, 247, 247, 0) 0%, rgba(247, 247, 247, 0) 21.54%, #F7F7F7 100%)'
       },
