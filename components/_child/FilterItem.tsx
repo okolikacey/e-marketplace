@@ -8,7 +8,7 @@ function FilterItem({ data }: filterItemPropType) {
     const { sectionName, options } = data;
     return (
         <>
-            <div className='flex flex-row justify-between items-center py-3 px-3 border-y-2'>
+            <div className='flex flex-row justify-between items-center py-3 px-3 border-y-2 font-bold'>
                 {sectionName}
                 <RiArrowDownSLine />
             </div>
