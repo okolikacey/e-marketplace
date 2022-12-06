@@ -10,4 +10,5 @@ export type filterItemPropType = {
 
 export type filterOptionPropType = {
     data: optionType[];
+    parentId: string;
 }

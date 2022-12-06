@@ -5,14 +5,14 @@ import { filterItemPropType } from '../../types/propTypes';
 import FilterBody from './FilterBody';
 
 function FilterItem({ data }: filterItemPropType) {
-    const { sectionName, options } = data;
+    const { sectionName, options, id } = data;
     return (
         <>
             <div className='flex flex-row justify-between items-center py-3 px-3 border-y-2 font-bold'>
                 {sectionName}
                 <RiArrowDownSLine />
             </div>
-            <FilterBody data={options} />
+            <FilterBody data={options} parentId={id.toString()} />
         </>
     );
 }
