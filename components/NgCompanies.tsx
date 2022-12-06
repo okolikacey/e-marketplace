@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from 'swiper';
+import SwiperCore, { Autoplay, Navigation } from 'swiper';
 import Card from './_child/Card';
 import chevron from '../public/images/chevron.png';
 import exxon from '../public/images/exxon.png';
@@ -9,6 +9,7 @@ import oando from '../public/images/oando.png';
 import nnpc from '../public/images/nnpc.png';
 import Company from './_child/Company';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import "swiper/css/navigation";
 
 const DATA = [
     {
@@ -54,6 +55,7 @@ const DATA = [
 ]
 
 function NgCompanies(props) {
+
     return (
         <Card cardStyle='bg-clightgreen'>
             {/* TO-DO add manual slider */}
@@ -63,7 +65,7 @@ function NgCompanies(props) {
 
             <div className='flex flex-row items-center my-4'>
                 <div className='w-1/7'>
-                    <div className='bg-ctransgreen w-8 h-8 rounded-full flex justify-center items-center'>
+                    <div onClick={() => console.log('forward')} className='bg-ctransgreen w-8 h-8 rounded-full flex justify-center items-center prev cursor-pointer'>
                         <IoIosArrowBack />
                     </div>
 
@@ -71,14 +73,15 @@ function NgCompanies(props) {
                 <Swiper
                     className='w-6/7'
                     slidesPerView={5}
-                // navigation={true}
+                    navigation={{ prevEl: '.prev', nextEl: '.next' }}
+                    modules={[Navigation]}
                 >
                     {DATA.map(company => <SwiperSlide>
                         <Company key={company.id} image={company.image} />
                     </SwiperSlide>)}
                 </Swiper>
                 <div className='w-1/7'>
-                    <div className='bg-ctransgreen w-8 h-8 rounded-full flex justify-center items-center basis-1'>
+                    <div className='bg-ctransgreen w-8 h-8 rounded-full flex justify-center items-center basis-1 next cursor-pointer'>
                         <IoIosArrowForward />
                     </div>
                 </div>

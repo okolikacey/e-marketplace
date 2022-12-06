@@ -32,3 +32,13 @@ body{
     background-color: #F1F1F1;
 };
 
+.nav-forward{
+  @apply bg-ctransgreen w-8 h-8 rounded-full flex justify-center items-center;
+};
+
+.nav-back {
+  @apply bg-ctransgreen w-8 h-8 rounded-full flex justify-center items-center;
+};
+
+
+
