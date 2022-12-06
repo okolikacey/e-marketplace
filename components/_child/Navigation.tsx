@@ -19,7 +19,7 @@ function Navigation(props) {
                 <input type='text' className='block h-8 px-3 py-2 flex-1 border rounded-r border-cgreen' />
             </div>
             <div className='flex-none flex items-center'>
-                <Button text='Login' icon={loginIcon} />
+                <Button text='Login' Icon={loginIcon} />
             </div>
         </div>
     );
