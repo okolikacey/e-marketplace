@@ -17,7 +17,7 @@ function FilterBody({ data, parentId }: filterOptionPropType) {
 
             {/* {data.map(option => <RadioBox key={option.id} name={option.name} isSelected={option.isActive} onSelect={(value) => console.log(value)} />)} */}
 
-            {data.map(option => <div><input type='radio' name={parentId} value={option.name} onClick={() => console.log(option.name)} /> {option.name}</div>)}
+            {data.map(option => <div className='my-1'><input type='radio' name={parentId} value={option.name} onClick={() => console.log(option.name, option.id)} /> {option.name}</div>)}
 
             <span className='text-cgreen mt-2'>Show more</span>
         </div>
