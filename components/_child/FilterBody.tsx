@@ -17,6 +17,8 @@ function FilterBody({ data }: filterOptionPropType) {
             </div>
 
             {data.map(option => <RadioBox key={option.id} name={option.name} isSelected={option.isActive} onSelect={(value) => console.log(value)} />)}
+
+            <span className='text-cgreen mt-2'>Show more</span>
         </div>
     );
 }
