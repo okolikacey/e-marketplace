@@ -1,10 +1,13 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Filters from '../components/Filters';
 import Card from '../components/_child/Card';
 import NavItemHeaders from '../components/_child/NavItemHeaders';
 import Wrapper from '../layout/Wrapper';
 import { productsAndServicesType } from '../types/productsServiceType';
+import { filterActions, initializeFilterState } from '../store/filterSlice';
 
-const filters = [
+const DATA = [
     {
         id: 1,
         sectionName: 'States',
@@ -33,7 +36,7 @@ const filters = [
         ]
     },
     {
-        id: 1,
+        id: 4,
         sectionName: 'Condition',
         options: [
             { id: 1, isActive: false, name: 'New' },
@@ -44,12 +47,19 @@ const filters = [
 ]
 
 function ProdAndServices(props: productsAndServicesType) {
+    const dispatch = useDispatch();
+    const filter = useSelector(initializeFilterState)
+
+    useEffect(() => {
+        dispatch(filterActions.initializeFilterState(props.filters))
+    }, [])
+
     return (
         <Wrapper>
             <Card>
                 <NavItemHeaders name='Product and Services' itemCount='2,000' />
                 <div className='my-4'>
-                    <Filters data={props.filters} />
+                    <Filters data={filter} />
                 </div>
             </Card>
         </Wrapper>
@@ -60,7 +70,7 @@ export async function getStaticProps() {
 
 
     return {
-        props: { filters },
+        props: { filters: DATA },
     }
 }
 
