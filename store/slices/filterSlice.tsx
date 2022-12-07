@@ -1,21 +1,20 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 import { HYDRATE } from "next-redux-wrapper";
-import { filterType } from "../types/commonTypes";
-import { AppState } from "./redux";
+import { filterType } from "../../types/commonTypes";
+import { AppState } from "../redux";
 
 export interface FilterState {
-  filter: filterType[]
+  filters: filterType[];
 }
 
-const initialState: FilterState = { filter: [] };
+const initialState: FilterState = { filters: [] };
 
 export const filterSlice = createSlice({
   name: "filter",
   initialState,
   reducers: {
-
     initializeFilterState(state, action) {
-      state.filter = action.payload;
+      state.filters = action.payload;
     },
 
     // extraReducers: {
@@ -31,6 +30,6 @@ export const filterSlice = createSlice({
 
 export const filterActions = filterSlice.actions;
 
-export const initializeFilterState = (state: AppState) => state.filter.filter;
+export const initializeFilterState = (state: AppState) => state.filter.filters;
 
 export default filterSlice.reducer;
