@@ -7,6 +7,9 @@ import Wrapper from "../layout/Wrapper";
 import { productsAndServicesType } from "../types/productsServiceType";
 import { filterActions, initializeFilterState } from "../store/slices/filterSlice";
 import Page from "../components/_child/Page";
+import { productsAndServiceData, productsData } from "../data/sample";
+import Product2 from "../components/_child/Product2";
+import { productsType } from "../types/commonTypes";
 
 const DATA = [
   {
@@ -59,8 +62,15 @@ function ProdAndServices(props: productsAndServicesType) {
     <Wrapper>
       <Card>
         <NavItemHeaders name="Product and Services" itemCount="2,000" />
-        <div className="my-4">
-          <Filters data={filter} />
+        <div>
+          <div className="my-4 flex flex-row">
+            <Filters data={filter} />
+            <div className="grid grid-cols-3 gap-5 mx-8">
+              {productsAndServiceData.map((product) => (
+                <Product2 key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
           <div className="flex flex-row justify-between my-10 border-t pt-5">
             <div>Showing results 1-9 of 2000</div>
             <div className="flex flex-row gap-5">
