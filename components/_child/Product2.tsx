@@ -6,8 +6,16 @@ import { productsPropType } from "../../types/propTypes";
 import Button from "./Button";
 
 function Product2(props: productsPropType) {
-  const { id, image, name, state, company, description, price } = props.product;
+  const { id, image, name, state, company } = props.product;
   const route = useRouter();
+
+  const renderPriceOrDescription = () => {
+    if ("price" in props.product) {
+      return <span className="text-cgreen">{props.product.price}</span>;
+    } else if ("description" in props.product) {
+      return <span className="text-[8px]">{props.product.description}</span>;
+    }
+  };
 
   return (
     <div className="flex flex-col w-[260px]">
@@ -28,7 +36,7 @@ function Product2(props: productsPropType) {
       <div className="flex flex-col h-[180px] justify-center text-center border-2 rounded-lg p-3 border-green-500">
         <b className="text-base">{name}</b>
 
-        <span className={`${price ? "text-cgreen" : "text-[8px]"}`}>{price || description}</span>
+        {renderPriceOrDescription()}
         <span>{company}</span>
         <Button text="View Details" />
       </div>
