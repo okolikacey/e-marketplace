@@ -1,15 +1,17 @@
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import { productsType } from "../../types/commonTypes";
 import Button from "./Button";
 
 function Product2(props: productsType) {
   const { id, image, name, state, company, ...args } = props.product;
+  const route = useRouter();
 
   return (
     <div className="flex flex-col w-[260px]">
-      <div className="bg-gray-100 h-[240px] rounded-lg flex items-center justify-center my-3 relative">
-        <Image src={image} alt="Image of item" />
+      <div className={`bg-gray-100 ${route.pathname === '/' ? "h-[240px]" : "h-[170px]"} rounded-lg flex items-center justify-center my-3 relative`}>
+        <Image src={image} alt="Image of item" fill={route.pathname === '/' ? false : true }/>
         <span
           className={`${
             state === "New" ? "bg-cgreen" : state === "Used" ? "bg-red-600" : "bg-cblack"

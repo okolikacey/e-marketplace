@@ -16,10 +16,26 @@ function Section1(props) {
     <Card>
       <div className="flex flex-row gap-2 relative">
         <div className="flex basis-4/5 bg-cover bg-center" style={bg}>
-          <div className="self-end relative">
-            {/* <Image src={color1} alt='img' height={350} className='right-0' />
-                        <Image src={color2} alt='img' className='absolute bottom-0 right-0' /> */}
-          </div>
+          
+        <div className="flex h-full w-full flex-row bg-[#114f13] bg-opacity-70">
+                            <div className="flex h-full w-[50%] items-center justify-center">
+                                <div>
+                                    <p className="text-5xl font-black text-green2">NOGIC JQS</p>
+                                    <p className="text-5xl font-black text-white">E-Market Place</p>
+                                    <p className="text-md font-sm text-white">
+                                        An electronic e-commerce site
+                                        <br />
+                                        for oil and gas industries
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="relative h-full w-[50%]">
+                                <Image src="/images/banner.gif" layout="fill" alt="" />
+                            </div>
+                        </div>
+
+
         </div>
         <div className="flex basis-1/5 flex-col gap-3">
           <SecOneNews />
