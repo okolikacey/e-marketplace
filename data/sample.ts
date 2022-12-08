@@ -114,3 +114,54 @@ export const productsAndServiceData = [
     company: "NLNG",
   },
 ];
+
+export const categoriesData = [
+  {
+    id: 1,
+    category: "Rigs",
+  },
+  {
+    id: 2,
+    category: "Cementing",
+  },
+  {
+    id: 3,
+    category: "Pumps",
+  },
+  {
+    id: 4,
+    category: "Valves",
+  },
+  {
+    id: 5,
+    category: "Coiled Tubing",
+  },
+  {
+    id: 6,
+    category: "Pressure Control Equipments",
+  },
+  {
+    id: 7,
+    category: "Downhole Tools",
+  },
+  {
+    id: 8,
+    category: "Lift Equipment",
+  },
+  {
+    id: 9,
+    category: "Casting",
+  },
+  {
+    id: 10,
+    category: "Completions",
+  },
+  {
+    id: 11,
+    category: "Drill Bits",
+  },
+  {
+    id: 12,
+    category: "Production",
+  },
+];
