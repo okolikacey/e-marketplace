@@ -2,10 +2,9 @@ import React from "react";
 import Card from "./_child/Card";
 import SectionHeader from "./_child/SectionHeader";
 import Product2 from "./_child/Product2";
-import { productsAndServiceData, productsData } from "../data/sample";
-import { productsType } from "../types/commonTypes";
+import { productsData } from "../data/sample";
 
-function Products(props) {
+function Products() {
   return (
     <Card>
       <SectionHeader title="Products" />

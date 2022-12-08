@@ -2,7 +2,7 @@ import React from "react";
 import Phone from "../../public/icons/phone 1.svg";
 import Mail from "../../public/icons/mail 1.svg";
 
-function HeaderContact(props) {
+function HeaderContact() {
   return (
     <div className="text-white flex flex-row gap-4">
       <div className="flex flex-row gap-2 items-center">

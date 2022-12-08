@@ -6,7 +6,7 @@ import { BiSearch } from "react-icons/bi";
 import loginIcon from "../../public/icons/loginicon.svg";
 import Camera from "../../public/icons/Camera 1.svg";
 
-function Navigation(props) {
+function Navigation() {
   return (
     <div className="px-20 py-5 flex flex-row flex-wrap bg-white">
       <div className="flex-none">

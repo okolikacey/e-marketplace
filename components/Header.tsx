@@ -5,7 +5,7 @@ import HeaderContact from "./_child/HeaderContact";
 import Navigation from "./_child/Navigation";
 import NavOptions from "./_child/NavOptions";
 
-function Header(props) {
+function Header() {
   const [showCategoryOptions, setShowCategoryOption] = useState(false);
   return (
     <header>

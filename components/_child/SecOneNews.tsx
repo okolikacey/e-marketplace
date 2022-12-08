@@ -3,7 +3,7 @@ import React from "react";
 import newOneImage from "../../public/images/news1.png";
 import newTwoImage from "../../public/images/news2.png";
 
-function SecOneNews(props) {
+function SecOneNews() {
   return (
     <div className="flex flex-col h-200 bg-cblackgrey px-3 w-200">
       <h4 className="text-cgreen">News</h4>
