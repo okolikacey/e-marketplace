@@ -12,24 +12,24 @@ export type filterType = {
   options: optionType[];
 };
 
-type priceProp = {
+export interface priceProp {
   id: number;
   image: StaticImageData;
   name: string;
   price: string;
+  description: undefined;
   state?: "New" | "Used" | "Refurbished";
   company: string;
-};
+}
 
-type descriptionProp = {
+export interface descriptionProp {
   id: number;
   image: StaticImageData;
   name: string;
   description: string;
+  price: undefined;
   state?: "New" | "Uesd" | "Refurbished";
   company: string;
-};
+}
 
-export type productsType = {
-  product: priceProp | descriptionProp;
-};
+export type productsType = priceProp | descriptionProp;

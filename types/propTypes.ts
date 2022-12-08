@@ -1,14 +1,19 @@
-import { filterType, optionType } from "./commonTypes";
+import { type } from "os";
+import { filterType, optionType, productsType } from "./commonTypes";
 
 export type filterPropType = {
-    data: filterType[];
-}
+  data: filterType[];
+};
 
 export type filterItemPropType = {
-    data: filterType;
-}
+  data: filterType;
+};
 
 export type filterOptionPropType = {
-    data: optionType[];
-    parentId: string;
-}
+  data: optionType[];
+  parentId: string;
+};
+
+export type productsPropType = {
+  product: productsType;
+};
