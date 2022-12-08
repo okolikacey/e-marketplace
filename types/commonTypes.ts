@@ -17,7 +17,7 @@ export interface priceProp {
   image: StaticImageData;
   name: string;
   price: string;
-  description: undefined;
+  description?: undefined;
   state?: "New" | "Used" | "Refurbished";
   company: string;
 }
@@ -27,7 +27,7 @@ export interface descriptionProp {
   image: StaticImageData;
   name: string;
   description: string;
-  price: undefined;
+  price?: undefined;
   state?: "New" | "Uesd" | "Refurbished";
   company: string;
 }
